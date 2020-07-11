@@ -2,28 +2,28 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "strict": false,
-    "jsx": "preserve",
-    "importHelpers": true,
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env"
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
     ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
     "paths": {
+      "~/*": [
+        "./*"
+      ],
       "@/*": [
         "src/*"
       ]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
+    "types": [
+      "@types/node",
     ]
   },
   "include": [
