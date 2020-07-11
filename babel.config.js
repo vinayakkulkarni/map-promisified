@@ -1,8 +1,28 @@
 module.exports = {
-  presets: [
-    '@babel/preset-env'
-  ],
-  plugins: [
-    '@babel/plugin-proposal-object-rest-spread'
-  ]
-}
+  env: {
+    test: {
+      plugins: [
+        [
+          'module-resolver',
+          {
+            root: ['.'],
+            alias: {
+              '@': '.',
+              '~': '.',
+            },
+          },
+        ],
+      ],
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              node: 'current',
+            },
+          },
+        ],
+      ],
+    },
+  },
+};
