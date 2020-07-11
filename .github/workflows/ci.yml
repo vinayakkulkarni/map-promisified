@@ -1,0 +1,51 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
+
+    steps:
+      - name: Setup node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Get npm cache directory
+        id: npm-cache
+        run: echo "::set-output name=dir::$(npm config get cache)"
+
+      - name: Cache node_modules
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm i
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit Tests using Ava
+        run: npm run test
