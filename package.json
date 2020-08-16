@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",
-    "@commitlint/cli": "^9.1.1",
+    "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.1",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@types/mapbox-gl": "^1.11.1",
