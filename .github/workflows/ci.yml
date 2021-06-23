@@ -24,6 +24,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+          check-latest: true
+
+      - name: Upgrade npm 🥳
+        run: npm i -g npm@latest
 
       - name: Checkout
         uses: actions/checkout@master
