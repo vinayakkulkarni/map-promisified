@@ -37,7 +37,8 @@
     "lint:eslint": "eslint 'src/**/*.{js,ts}'",
     "lint:eslint:fix": "eslint --fix 'src/**/*.{js,ts}'",
     "lint:prettier": "prettier --check \"{,!(node_modules|dist)/**/}*.{js,ts}\"",
-    "lint:prettier:fix": "prettier --write \"{,!(node_modules|dist)/**/}*.{js,ts}\""
+    "lint:prettier:fix": "prettier --write \"{,!(node_modules|dist)/**/}*.{js,ts}\"",
+    "prepare": "husky install"
   },
   "peerDependencies": {
     "mapbox-gl": "1.11.1"
@@ -58,7 +59,7 @@
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "prettier": "^2.3.1",
     "rollup": "^2.52.2",
     "rollup-plugin-babel": "^4.4.0",

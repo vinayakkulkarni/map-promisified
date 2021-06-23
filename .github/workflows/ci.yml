@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [16]
 
     steps:
       - name: Setup node.js
@@ -44,8 +44,19 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm i
 
-      - name: Lint
-        run: npm run lint
+      - name: Run linter(s) 👀
+        uses: wearerequired/lint-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          continue_on_error: true
+          git_name: github-actions[bot]
+          git_email: github-actions[bot]@users.noreply.github.com
+          auto_fix: false
+          eslint: true
+          eslint_extensions: js,ts,vue
+          prettier: true
+          prettier_extensions: js,ts,vue
+          neutral_check_on_warning: true
 
       - name: Unit Tests using Ava
         run: npm run test
