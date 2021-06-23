@@ -46,7 +46,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm i
+        run: npm ci --prefer-offline --no-audit --no-optional
 
       - name: Run linter(s) 👀
         uses: wearerequired/lint-action@v1
