@@ -44,7 +44,7 @@
     "mapbox-gl": "1.13.1"
   },
   "devDependencies": {
-    "@ava/babel": "^1.0.1",
+    "@ava/babel": "^2.0.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@rollup/plugin-commonjs": "^19.0.0",
