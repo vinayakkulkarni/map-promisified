@@ -1,5 +1,5 @@
-import methods from './methodsConfig';
 import { Map, MapboxEvent } from 'mapbox-gl';
+import methods from './methodsConfig';
 
 type Event = { eventId: string } & MapboxEvent;
 

@@ -1,4 +1,4 @@
-import { Map, FlyToOptions } from 'mapbox-gl';
+import { FlyToOptions, Map } from 'mapbox-gl';
 
 const composedMethodEvents = [
   {
