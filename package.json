@@ -49,7 +49,7 @@
     "@commitlint/config-conventional": "^13.1.0",
     "@rollup/plugin-commonjs": "^19.0.2",
     "@types/mapbox-gl": "1.13.2",
-    "@types/node": "^16.4.3",
+    "@types/node": "^16.4.10",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
     "@vinayakkulkarni/prettier-config-vue": "^1.0.0",
