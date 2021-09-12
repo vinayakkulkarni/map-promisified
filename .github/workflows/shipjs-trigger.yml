@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-node@v2.4.0
         with:
           node-version: 16
+          registry-url: https://registry.npmjs.org
           check-latest: true
-          registry-url: 'https://npm.pkg.github.com'
           cache: 'npm'
           
       - name: Upgrade npm 🎉
