@@ -1,6 +1,6 @@
 {
   "name": "@vinayakkulkarni/map-promisified",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Wrapper for Mapbox GL JS library that gives nice Promise-based API for asynchronous map functions",
   "types": "types/index.d.ts",
   "main": "dist/map-promisified.umd.js",
