@@ -7,7 +7,7 @@
 [![npm](https://img.shields.io/npm/dm/@vinayakkulkarni/map-promisified?logo=npm)](http://npm-stat.com/charts.html?package=map-promisified)
 [![npm bundle size (version)](https://img.shields.io/bundlephobia/min/@vinayakkulkarni/map-promisified/latest)](https://bundlephobia.com/package/map-promisified@latest)
 [![npm type definitions](https://img.shields.io/npm/types/@vinayakkulkarni/map-promisified)](https://github.com/vinayakkulkarni/map-promisified/blob/master/package.json)
-[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/16121/branches/339368/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=16121&bid=339368)
+[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/18563/branches/457764/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=18563&bid=457764)
 [![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinayakkulkarni/map-promisified)](https://snyk.io/test/github/vinayakkulkarni/map-promisified)
 [![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/vinayakkulkarni/map-promisified?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/map-promisified/alerts/)
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/vinayakkulkarni/map-promisified?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/map-promisified/context:javascript)
