@@ -3,6 +3,9 @@ import IMapActions from './mapActions';
 import methodsData from './methodsConfig';
 import promisifyMethod from './promisifyMethod';
 
+/**
+ * @param map
+ */
 export default function (map: Map): IMapActions {
   const toPromisify = Object.keys(methodsData);
 

@@ -3,6 +3,10 @@ import IMapActions from './mapActions';
 import promisifyMap from './promisifyMap';
 import promisifyMethod from './promisifyMethod';
 
+/**
+ * @param map
+ * @param methodName
+ */
 export default function promisify(
   map: Map,
   methodName: string | null = null,

@@ -3,10 +3,19 @@ import methods from './methodsConfig';
 
 type Event = { eventId: string } & MapboxEvent;
 
+/**
+ * @param methodName
+ */
 function generateEventId(methodName: string): string {
   return `${methodName}-${('' + Math.random()).split('.')[1]}`;
 }
 
+/**
+ * @param map
+ * @param eventName
+ * @param eventId
+ * @param resolve
+ */
 function catchEventFabric(
   map: Map,
   eventName: string,
@@ -23,6 +32,10 @@ function catchEventFabric(
   return catchEvent;
 }
 
+/**
+ * @param map
+ * @param methodName
+ */
 function promisifyMethod(
   map: Map,
   methodName: string,

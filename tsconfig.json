@@ -27,8 +27,9 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts",
+    "src",
+    "shims",
+    "tests",
   ],
   "exclude": [
     "node_modules"
