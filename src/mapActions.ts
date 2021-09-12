@@ -1,4 +1,4 @@
-interface IMapActions {
+export default interface IMapActions {
   setCenter(...args: any[]): Promise<any>;
   panBy(...args: any[]): Promise<any>;
   panTo(...args: any[]): Promise<any>;
@@ -17,5 +17,3 @@ interface IMapActions {
   easeTo(...args: any[]): Promise<any>;
   flyTo(...args: any[]): Promise<any>;
 }
-
-export default IMapActions;

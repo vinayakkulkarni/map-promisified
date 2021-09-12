@@ -1,4 +1,4 @@
-import { Map } from 'mapbox-gl';
+import type { Map } from 'mapbox-gl';
 import IMapActions from './mapActions';
 import promisifyMap from './promisifyMap';
 import promisifyMethod from './promisifyMethod';

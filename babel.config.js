@@ -1,4 +1,5 @@
 module.exports = {
+  presets: ['@babel/preset-typescript', '@babel/preset-env'],
   env: {
     test: {
       plugins: [
@@ -9,16 +10,6 @@ module.exports = {
             alias: {
               '@': '.',
               '~': '.',
-            },
-          },
-        ],
-      ],
-      presets: [
-        [
-          '@babel/preset-env',
-          {
-            targets: {
-              node: 'current',
             },
           },
         ],

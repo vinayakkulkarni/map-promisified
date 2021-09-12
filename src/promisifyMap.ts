@@ -1,7 +1,7 @@
-import promisifyMethod from './promisifyMethod';
-import methodsData from './methodsConfig';
-import { Map } from 'mapbox-gl';
+import type { Map } from 'mapbox-gl';
 import IMapActions from './mapActions';
+import methodsData from './methodsConfig';
+import promisifyMethod from './promisifyMethod';
 
 export default function (map: Map): IMapActions {
   const toPromisify = Object.keys(methodsData);
